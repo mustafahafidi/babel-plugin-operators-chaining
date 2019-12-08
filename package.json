@@ -1,8 +1,12 @@
 {
   "name": "babel-plugin-operators-chaining",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Transpile arithmetic comparison chains to logical expressions",
   "main": "lib/index.js",
+  "scripts": {
+    "babel": "./node_modules/@babel/cli/bin/babel.js --plugins ./lib/index.js ./test/in.js",
+    "babel-node": "babel-node ./test/in.js"
+  },
   "author": "Mustafa Hafidi <mustafahafidi96@gmail.com>",
   "license": "MIT",
   "keywords": [
@@ -10,5 +14,13 @@
     "chaining",
     "comparison",
     "chaining comparison operators"
-  ]
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/node": "^7.7.4"
+  },
+  "dependencies": {
+    "@babel/helper-plugin-utils": "^7.0.0"
+  }
 }
