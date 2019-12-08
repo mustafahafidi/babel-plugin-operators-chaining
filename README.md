@@ -2,24 +2,27 @@
 
 For transpiling chained arithmetic comparison operators to normal logical expressions (as in python).
 
+**Important: this plugin is a result of a specific and enclosed project. Be aware that it modifies the semantics and you might get unexpected results if you misuse it. See the example below.**
+
 ## Example
 
 **In**
 
 ```js
-if (4 <= a < 10) {
-  //something
-}
+console.log(2!=1===1==1<2);             // false
+console.log(2 > 3 < 4 == 4);            // false
+console.log(2 <= 4 === true);           // true
 ```
+transpiles to
 
 **Out**
 
 ```js
-if (4 <= a && a < 10) {
-  //something
-}
-```
 
+console.log(2 != 1 && 1 === 1 && 1 == 1 && 1 < 2); // prints true
+console.log(2 > 3 && 3 < 4 && 4 == 4);             // prints false
+console.log(2 <= 4 && 4 === true);                 // prints false
+```
 ## Installation
 
 ```sh
