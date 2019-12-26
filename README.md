@@ -2,7 +2,7 @@
 
 For transpiling chained arithmetic comparison operators to normal logical expressions (as in python).
 
-**Important: this plugin is a result of a specific and enclosed project. Be aware that it modifies the semantics and you might get unexpected results if you misuse it. See the example below.**
+**Important: this is an experimental plugin for an enclosed project. Be aware that it modifies the semantics. See the example below.**
 
 ## Example
 
