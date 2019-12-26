@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "babel": "./node_modules/@babel/cli/bin/babel.js --plugins ./lib/index.js ./test/in.js",
-    "babel-node": "babel-node ./test/in.js"
+    "babel-node": "babel-node --plugins ./lib/index.js ./test/in.js"
   },
   "author": "Mustafa Hafidi <mustafahafidi96@gmail.com>",
   "license": "MIT",
