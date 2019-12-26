@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-operators-chaining",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Transpile arithmetic comparison chains to logical expressions",
   "main": "lib/index.js",
   "scripts": {
