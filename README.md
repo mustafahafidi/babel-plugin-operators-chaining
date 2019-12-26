@@ -9,6 +9,9 @@ For transpiling chained arithmetic comparison operators to normal logical expres
 **In**
 
 ```js
+if(0<=a<5) {
+  // something
+}
 console.log(2!=1===1==1<2);             // false
 console.log(2 > 3 < 4 == 4);            // false
 console.log(2 <= 4 === true);           // true
@@ -18,7 +21,9 @@ transpiles to
 **Out**
 
 ```js
-
+if (0 <= a && a < 5) {
+  // something
+}
 console.log(2 != 1 && 1 === 1 && 1 == 1 && 1 < 2); // prints true
 console.log(2 > 3 && 3 < 4 && 4 == 4);             // prints false
 console.log(2 <= 4 && 4 === true);                 // prints false
