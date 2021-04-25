@@ -12,9 +12,9 @@ For transpiling chained arithmetic comparison operators to normal logical expres
 if(0<=a<5) {
   // something
 }
-console.log(2!=1===1==1<2);             // false
-console.log(2 > 3 < 4 == 4);            // false
-console.log(2 <= 4 === true);           // true
+console.log(2!=1===1==1<2);             // false before plugin
+console.log(2 > 3 < 4 == 4);            // false before plugin
+console.log(2 <= 4 === true);           // true  before plugin
 ```
 transpiles to
 
